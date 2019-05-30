@@ -5,8 +5,13 @@
 //  Created by  on 5/29/19.
 //  Copyright © 2019 EmmasApps. All rights reserved.
 //
-// i think it should be done
-//we might want to add more words but it works over all
+
+// i made an appIcon
+//also i added a few more words to the list
+// i added a ui controller so that you can enter the word you want to be used, and then it will take you to the page
+// it's messed up because there is no backwards arrow on the thing
+// the clauidasviewcontroller is where we will type to code for the page that you enter information from
+// if you want me to come up tmr during class ask mr walter to call mr scholtz i would love to leave, and if this doesn't make sense i can talk to you about it
 import UIKit
 
 class ViewController: UIViewController
@@ -16,7 +21,7 @@ class ViewController: UIViewController
     @IBOutlet weak var correctWordLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var lettersButtons: [UIButton]!
-    var listOfWords = ["apple", "zoo", "beach", "doctor", "restaurant"]
+    var listOfWords = ["apple", "zoo", "beach", "doctor", "restaurant", "orange", "lion", "tiger", "dolphin", "jellyfish", ]
     let incorrectMovesAllowed = 7
     var totalWins = 0
     {
@@ -41,6 +46,8 @@ class ViewController: UIViewController
         let letter = Character(letterString.lowercased())
         currentGame.playerGuessed(letter: letter)
         updateGameState()
+        
+//        listOfWords.append("newWOrd")
     }
     
     func updateGameState()
@@ -71,7 +78,7 @@ class ViewController: UIViewController
     {
         if !listOfWords.isEmpty
         {
-        let newWord = listOfWords.removeFirst()
+        let newWord = listOfWords.removeLast()
         currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters : [])
         enableLetterButtons(_enable: true)
         updateUI()
@@ -93,7 +100,7 @@ class ViewController: UIViewController
     func updateUI()
     {
         var letters = [String]()
-        for letter in currentGame.formattedWord.characters
+        for letter in currentGame.formattedWord
         {
             letters.append(String(letter))
         }

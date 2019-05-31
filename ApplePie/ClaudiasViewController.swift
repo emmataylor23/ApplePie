@@ -10,5 +10,27 @@ import UIKit
 
 class ClaudiasViewController: UIViewController
 {
-
+    
+    
+    @IBOutlet weak var myTextfield: UITextField!
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "playSegue"
+        {
+            print("playTapped")
+            // this is where you will enter the code for the textfield to become the new word
+        
+        }
+        
+        if segue.identifier == "randomSegue"
+        {
+            print("randomTapped")
+        }
+    }
 }

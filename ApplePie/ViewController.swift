@@ -6,10 +6,14 @@
 //  Copyright © 2019 EmmasApps. All rights reserved.
 //
 
-//i was able to take the word entered into the textField and make it the word that is used for the game
-//however the label shows the actual word before you type a button (if you run it and type a word in you'll see what i mean) it's kind of hard to explain
+// ok i figured out the first part of it now the word doesn't show up, but i want to figure out how i can allow the array to be randomized without messing with the word entered into it
+
+
+
 //the other thing that i might have messed up is that it doesnt show the blanks until someone taps one of the letter buttons
 //other wise it still works
+
+// i'm not sure what it means that you wrote ahead of this, but i don't see it happening i might have accidentally got it fixed.
 
 import UIKit
 
@@ -68,8 +72,10 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-       newRound()
+       
         correctWordLabel.text = wordLabelString
+        newRound()
+        listOfWords.shuffle()
     }
     
     var currentGame: Game!

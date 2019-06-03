@@ -15,7 +15,7 @@ class ClaudiasViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        //hello
+      // hello it's claudia's view controller who am i speaking with today?
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)

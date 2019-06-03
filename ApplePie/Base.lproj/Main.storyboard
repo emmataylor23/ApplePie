@@ -56,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="-18.440779610194905"/>
         </scene>
-        <!--Title-->
+        <!--Apple Pie-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ApplePie" customModuleProvider="target" sceneMemberID="viewController">
@@ -312,7 +312,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Tse-UW-Ldl"/>
+                    <navigationItem key="navigationItem" title="Apple Pie" id="Tse-UW-Ldl"/>
                     <connections>
                         <outlet property="correctWordLabel" destination="s0D-jw-vdT" id="dv1-AZ-3bH"/>
                         <outlet property="scoreLabel" destination="Tvp-rT-b5c" id="Yb9-FD-nFB"/>
@@ -347,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316" y="-18.440779610194905"/>
+            <point key="canvasLocation" x="1521" y="-18"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AXv-XV-mjI">
@@ -365,7 +365,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQj-bm-mtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130.40000000000001" y="-18.440779610194905"/>
+            <point key="canvasLocation" x="102" y="-18"/>
         </scene>
     </scenes>
     <resources>

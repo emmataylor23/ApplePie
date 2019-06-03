@@ -6,22 +6,21 @@
 //  Copyright © 2019 EmmasApps. All rights reserved.
 //
 
-// i made an appIcon
-//also i added a few more words to the list
-// i added a ui controller so that you can enter the word you want to be used, and then it will take you to the page
-// it's messed up because there is no backwards arrow on the thing
-// the clauidasviewcontroller is where we will type to code for the page that you enter information from
-// if you want me to come up tmr during class ask mr walter to call mr scholtz i would love to leave, and if this doesn't make sense i can talk to you about it
+//i was able to take the word entered into the textField and make it the word that is used for the game
+//however the label shows the actual word before you type a button (if you run it and type a word in you'll see what i mean) it's kind of hard to explain
+//the other thing that i might have messed up is that it doesnt show the blanks until someone taps one of the letter buttons
+//other wise it still works
+
 import UIKit
 
 class ViewController: UIViewController
 {
-
+    var wordLabelString = ""
     @IBOutlet weak var treeImageView: UIImageView!
     @IBOutlet weak var correctWordLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var lettersButtons: [UIButton]!
-    var listOfWords = ["apple", "zoo", "beach", "doctor", "restaurant", "orange", "lion", "tiger", "dolphin", "jellyfish", ]
+    var listOfWords = ["apple", "zoo", "beach", "doctor", "restaurant", "orange", "lion", "tiger", "dolphin", "jellyfish", "absence", "discover", "against", "package", "american", "elect", "author", "bench", "front", "bike", "deserve", "galaxy", "blanket", "earth", "branch", "educate", "celebrity", "cheap", "content", "office", "enjoy", "school", "factory", "everyday", "father", "glance", "flower", "groceries", "helicopter", "mouse", "noise", "rapidly", "service", "thousand", "yesterday"]
     let incorrectMovesAllowed = 7
     var totalWins = 0
     {
@@ -70,6 +69,7 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
        newRound()
+        correctWordLabel.text = wordLabelString
     }
     
     var currentGame: Game!
@@ -91,10 +91,10 @@ class ViewController: UIViewController
     
     func enableLetterButtons(_enable: Bool)
     {
-    for button in lettersButtons
-    {
+        for button in lettersButtons
+        {
         button.isEnabled = _enable
-    }
+        }
     }
     
     func updateUI()
@@ -109,6 +109,4 @@ class ViewController: UIViewController
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }
-
-
 }

@@ -27,7 +27,7 @@ class ClaudiasViewController: UIViewController
             // this is where you will enter the code for the textfield to become the new word
             // let hiddenWord = word entered into textfield
             newVC.wordLabelString = myTextfield.text!
-            newVC.listOfWords.append(newVC.wordLabelString)
+//            newVC.listOfWords.append(newVC.wordLabelString)
         }
         
         if segue.identifier == "randomSegue"

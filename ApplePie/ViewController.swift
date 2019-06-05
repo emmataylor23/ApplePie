@@ -8,8 +8,6 @@
 
 // ok i figured out the first part of it now the word doesn't show up, but i want to figure out how i can allow the array to be randomized without messing with the word entered into it
 
-
-
 //the other thing that i might have messed up is that it doesnt show the blanks until someone taps one of the letter buttons
 //other wise it still works
 
@@ -73,17 +71,24 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
        
-        correctWordLabel.text = wordLabelString
-        newRound()
         listOfWords.shuffle()
+        if wordLabelString != ""
+        {
+            listOfWords.append(wordLabelString)
+        }
+//        correctWordLabel.text = wordLabelString
+        newRound()
+        
     }
     
     var currentGame: Game!
     
     func newRound()
     {
+        
         if !listOfWords.isEmpty
         {
+            
         let newWord = listOfWords.removeLast()
         currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters : [])
         enableLetterButtons(_enable: true)

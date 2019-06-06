@@ -12,7 +12,12 @@
 		4943BEE9229EC812005D6695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4943BEE7229EC812005D6695 /* Main.storyboard */; };
 		4943BEEB229EC815005D6695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4943BEEA229EC815005D6695 /* Assets.xcassets */; };
 		4943BEEE229EC815005D6695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4943BEEC229EC815005D6695 /* LaunchScreen.storyboard */; };
-		4943BEF6229ECFCA005D6695 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943BEF5229ECFCA005D6695 /* Game.swift */; };
+		4996E19E22A94C0A002B4878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996E19D22A94C0A002B4878 /* AppDelegate.swift */; };
+		4996E1A322A94C0A002B4878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4996E1A122A94C0A002B4878 /* Main.storyboard */; };
+		4996E1A522A94C0C002B4878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4996E1A422A94C0C002B4878 /* Assets.xcassets */; };
+		4996E1AB22A951B5002B4878 /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996E1AA22A951B5002B4878 /* TVViewController.swift */; };
+		4996E1AD22A95306002B4878 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996E1AC22A95306002B4878 /* Game.swift */; };
+		4996E1AE22A95306002B4878 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996E1AC22A95306002B4878 /* Game.swift */; };
 		ADF29D9022A051130050F90B /* ClaudiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF29D8F22A051130050F90B /* ClaudiasViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,12 +29,25 @@
 		4943BEEA229EC815005D6695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4943BEED229EC815005D6695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4943BEEF229EC815005D6695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4943BEF5229ECFCA005D6695 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		4996E19B22A94C0A002B4878 /* ApplePieTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePieTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4996E19D22A94C0A002B4878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4996E1A222A94C0A002B4878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4996E1A422A94C0C002B4878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4996E1A622A94C0C002B4878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4996E1AA22A951B5002B4878 /* TVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TVViewController.swift; path = ApplePieTV/TVViewController.swift; sourceTree = SOURCE_ROOT; };
+		4996E1AC22A95306002B4878 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		ADF29D8F22A051130050F90B /* ClaudiasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudiasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4943BEDD229EC812005D6695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4996E19822A94C0A002B4878 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +60,9 @@
 		4943BED7229EC812005D6695 = {
 			isa = PBXGroup;
 			children = (
+				4996E1AC22A95306002B4878 /* Game.swift */,
 				4943BEE2229EC812005D6695 /* ApplePie */,
+				4996E19C22A94C0A002B4878 /* ApplePieTV */,
 				4943BEE1229EC812005D6695 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				4943BEE0229EC812005D6695 /* ApplePie.app */,
+				4996E19B22A94C0A002B4878 /* ApplePieTV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,12 +83,23 @@
 				4943BEE5229EC812005D6695 /* ViewController.swift */,
 				4943BEE7229EC812005D6695 /* Main.storyboard */,
 				ADF29D8F22A051130050F90B /* ClaudiasViewController.swift */,
-				4943BEF5229ECFCA005D6695 /* Game.swift */,
 				4943BEEA229EC815005D6695 /* Assets.xcassets */,
 				4943BEEC229EC815005D6695 /* LaunchScreen.storyboard */,
 				4943BEEF229EC815005D6695 /* Info.plist */,
 			);
 			path = ApplePie;
+			sourceTree = "<group>";
+		};
+		4996E19C22A94C0A002B4878 /* ApplePieTV */ = {
+			isa = PBXGroup;
+			children = (
+				4996E1AA22A951B5002B4878 /* TVViewController.swift */,
+				4996E19D22A94C0A002B4878 /* AppDelegate.swift */,
+				4996E1A122A94C0A002B4878 /* Main.storyboard */,
+				4996E1A422A94C0C002B4878 /* Assets.xcassets */,
+				4996E1A622A94C0C002B4878 /* Info.plist */,
+			);
+			path = ApplePieTV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,19 +122,39 @@
 			productReference = 4943BEE0229EC812005D6695 /* ApplePie.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4996E19A22A94C0A002B4878 /* ApplePieTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4996E1A922A94C0C002B4878 /* Build configuration list for PBXNativeTarget "ApplePieTV" */;
+			buildPhases = (
+				4996E19722A94C0A002B4878 /* Sources */,
+				4996E19822A94C0A002B4878 /* Frameworks */,
+				4996E19922A94C0A002B4878 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplePieTV;
+			productName = ApplePieTV;
+			productReference = 4996E19B22A94C0A002B4878 /* ApplePieTV.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4943BED8229EC812005D6695 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = EmmasApps;
 				TargetAttributes = {
 					4943BEDF229EC812005D6695 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
+					};
+					4996E19A22A94C0A002B4878 = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -120,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				4943BEDF229EC812005D6695 /* ApplePie */,
+				4996E19A22A94C0A002B4878 /* ApplePieTV */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +188,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4996E19922A94C0A002B4878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4996E1A522A94C0C002B4878 /* Assets.xcassets in Resources */,
+				4996E1A322A94C0A002B4878 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -144,8 +206,18 @@
 			files = (
 				ADF29D9022A051130050F90B /* ClaudiasViewController.swift in Sources */,
 				4943BEE6229EC812005D6695 /* ViewController.swift in Sources */,
-				4943BEF6229ECFCA005D6695 /* Game.swift in Sources */,
 				4943BEE4229EC812005D6695 /* AppDelegate.swift in Sources */,
+				4996E1AD22A95306002B4878 /* Game.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4996E19722A94C0A002B4878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4996E1AB22A951B5002B4878 /* TVViewController.swift in Sources */,
+				4996E1AE22A95306002B4878 /* Game.swift in Sources */,
+				4996E19E22A94C0A002B4878 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +238,14 @@
 				4943BEED229EC815005D6695 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4996E1A122A94C0A002B4878 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4996E1A222A94C0A002B4878 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,13 +372,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KQ4X5N6672;
+				DEVELOPMENT_TEAM = YN44JALKYL;
 				INFOPLIST_FILE = ApplePie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = EmmasApps.ApplePie2;
+				PRODUCT_BUNDLE_IDENTIFIER = EmmasApps.ApplePie2hgf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,16 +390,58 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KQ4X5N6672;
+				DEVELOPMENT_TEAM = YN44JALKYL;
 				INFOPLIST_FILE = ApplePie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = EmmasApps.ApplePie2;
+				PRODUCT_BUNDLE_IDENTIFIER = EmmasApps.ApplePie2hgf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4996E1A722A94C0C002B4878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN44JALKYL;
+				INFOPLIST_FILE = ApplePieTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.learnappmaking.ApplePieTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.2;
+			};
+			name = Debug;
+		};
+		4996E1A822A94C0C002B4878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YN44JALKYL;
+				INFOPLIST_FILE = ApplePieTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.learnappmaking.ApplePieTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.2;
 			};
 			name = Release;
 		};
@@ -340,6 +462,15 @@
 			buildConfigurations = (
 				4943BEF3229EC815005D6695 /* Debug */,
 				4943BEF4229EC815005D6695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4996E1A922A94C0C002B4878 /* Build configuration list for PBXNativeTarget "ApplePieTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4996E1A722A94C0C002B4878 /* Debug */,
+				4996E1A822A94C0C002B4878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -55,10 +55,12 @@ class ViewController: UIViewController
     {
         if currentGame.incorrectMovesRemaining == 0
         {
+            createLossAlert()
             totalLosses += 1
         }
         else if currentGame.word == currentGame.formattedWord
         {
+            createWinAlert()
             totalWins += 1
         }
         else
@@ -88,7 +90,6 @@ class ViewController: UIViewController
         
         if !listOfWords.isEmpty
         {
-            
         let newWord = listOfWords.removeLast()
         currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters : [])
         enableLetterButtons(_enable: true)
@@ -119,5 +120,21 @@ class ViewController: UIViewController
         correctWordLabel.text = wordWithSpacing
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
+    }
+    
+    func createWinAlert()
+    {
+        let winAlert = UIAlertController(title: "You won!", message: "The word was \(currentGame.word) ", preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        winAlert.addAction(OKAction)
+        self.present(winAlert, animated: true, completion: nil)
+    }
+    
+    func createLossAlert()
+    {
+        let lossAlert = UIAlertController(title: "You lost!", message: "The word was \(currentGame.word) ", preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        lossAlert.addAction(OKAction)
+        self.present(lossAlert, animated: true, completion: nil)
     }
 }

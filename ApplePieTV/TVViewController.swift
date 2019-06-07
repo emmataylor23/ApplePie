@@ -43,15 +43,28 @@ class TVViewController: UIViewController
         
         //        listOfWords.append("newWOrd")
     }
+//    @IBAction func buttonPressed(_ sender: UIButton)
+//    {
+//        sender.isEnabled = false
+//        let letterString = sender.title(for: .normal)!
+//        let letter = Character(letterString.lowercased())
+//        currentGame.playerGuessed(letter: letter)
+//        updateGameState()
+//
+//        //        listOfWords.append("newWOrd")
+//    }
+    
     
     func updateGameState()
     {
         if currentGame.incorrectMovesRemaining == 0
         {
+            createLossAlert()
             totalLosses += 1
         }
         else if currentGame.word == currentGame.formattedWord
         {
+            createWinAlert()
             totalWins += 1
         }
         else
@@ -113,6 +126,44 @@ class TVViewController: UIViewController
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }
+    
+    
+    func createWinAlert()
+    {
+        let winAlert = UIAlertController(title: "You won!", message: "The word was \(currentGame.word) ", preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        winAlert.addAction(OKAction)
+        self.present(winAlert, animated: true, completion: nil)
+    }
+    
+    func createLossAlert()
+    {
+        let lossAlert = UIAlertController(title: "You lost!", message: "The word was \(currentGame.word) ", preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        lossAlert.addAction(OKAction)
+        self.present(lossAlert, animated: true, completion: nil)
+        
+    }
+    
+
+    func tvUpdateGameState()
+    {
+        if currentGame.incorrectMovesRemaining == 0
+        {
+            createLossAlert()
+            totalLosses += 1
+        }
+        else if currentGame.word == currentGame.formattedWord
+        {
+            createWinAlert()
+            totalWins += 1
+        }
+        else
+        {
+            updateUI()
+        }
+    }
+    
 }
 
     

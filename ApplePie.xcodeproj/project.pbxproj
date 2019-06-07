@@ -18,6 +18,7 @@
 		4996E1AB22A951B5002B4878 /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996E1AA22A951B5002B4878 /* TVViewController.swift */; };
 		4996E1AD22A95306002B4878 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996E1AC22A95306002B4878 /* Game.swift */; };
 		4996E1AE22A95306002B4878 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996E1AC22A95306002B4878 /* Game.swift */; };
+		AD5E336422AADFF5007420A4 /* ClaudiasTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E336322AADFF5007420A4 /* ClaudiasTVViewController.swift */; };
 		ADF29D9022A051130050F90B /* ClaudiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF29D8F22A051130050F90B /* ClaudiasViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		4996E1A622A94C0C002B4878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4996E1AA22A951B5002B4878 /* TVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TVViewController.swift; path = ApplePieTV/TVViewController.swift; sourceTree = SOURCE_ROOT; };
 		4996E1AC22A95306002B4878 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		AD5E336322AADFF5007420A4 /* ClaudiasTVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudiasTVViewController.swift; sourceTree = "<group>"; };
 		ADF29D8F22A051130050F90B /* ClaudiasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudiasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				4996E1AA22A951B5002B4878 /* TVViewController.swift */,
+				AD5E336322AADFF5007420A4 /* ClaudiasTVViewController.swift */,
 				4996E19D22A94C0A002B4878 /* AppDelegate.swift */,
 				4996E1A122A94C0A002B4878 /* Main.storyboard */,
 				4996E1A422A94C0C002B4878 /* Assets.xcassets */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5E336422AADFF5007420A4 /* ClaudiasTVViewController.swift in Sources */,
 				4996E1AB22A951B5002B4878 /* TVViewController.swift in Sources */,
 				4996E1AE22A95306002B4878 /* Game.swift in Sources */,
 				4996E19E22A94C0A002B4878 /* AppDelegate.swift in Sources */,

@@ -96,7 +96,7 @@ class TVViewController: UIViewController
         {
             
             let newWord = listOfWords.removeLast()
-            currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters : [])
+            currentGame = Game(word: newWord.lowercased(), incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters : [])
             enableLetterButtons(_enable: true)
             updateUI()
         }

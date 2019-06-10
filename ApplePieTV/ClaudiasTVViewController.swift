@@ -21,7 +21,7 @@ class ClaudiasTVViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         let newVC = segue.destination as! TVViewController
-        if segue.identifier == "playSegue"
+        if segue.identifier == "tvplaySegue"
         {
             print("playTapped")
             // this is where you will enter the code for the textfield to become the new word
@@ -30,7 +30,7 @@ class ClaudiasTVViewController: UIViewController {
             //            newVC.listOfWords.append(newVC.wordLabelString)
         }
         
-        if segue.identifier == "randomSegue"
+        if segue.identifier == "tvrandomSegue"
         {
             print("randomTapped")
         }
